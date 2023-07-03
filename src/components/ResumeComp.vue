@@ -4,7 +4,9 @@
 
 <script>
 export default {
-
+    name: 'skills',
+components: {
+} 
 }
 </script>
 
