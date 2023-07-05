@@ -1,13 +1,16 @@
 <template>
   <Navbar/>
   <router-view/>
+  <footercomp/>
 </template>
 
 <script>
-import Navbar from './components/NavbarComp.vue';
+import Navbar from '@/components/NavbarComp.vue';
+import footercomp from '@/components/footer-comp.vue';
 export default {
   components: {
-    Navbar
+    Navbar, 
+    footercomp
   }
 }
 </script>
@@ -21,16 +24,4 @@ export default {
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
